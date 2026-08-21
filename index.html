@@ -1,1164 +1,748 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Aman Computer | Maro, Bemetara</title>
+<title>Aman Computer Jobs | Latest Jobs, Forms & Services</title>
 
-  <meta name="description"
-        content="Aman Computer, Maro Bemetara - Computer Repairing, Printer Repairing, Online Forms और Government Services.">
+<meta name="description"
+content="Aman Computer Jobs - Latest Government Jobs, Private Jobs, Online Forms, Admit Card, Results and Computer Services in Maro Bemetara.">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-      font-family: Arial, sans-serif;
-    }
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,sans-serif;
+  scroll-behavior:smooth;
+}
 
-    body {
-      background: #f5f7fb;
-      color: #222;
-      line-height: 1.6;
-    }
+body{
+  background:#f4f7fb;
+  color:#222;
+  line-height:1.6;
+}
 
-    header {
-      background: linear-gradient(135deg, #0757d5, #00a8ff);
-      color: white;
-      padding: 18px 6%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 3px 12px rgba(0,0,0,.15);
-    }
+header{
+  background:linear-gradient(135deg,#0757d5,#00a8ff);
+  color:white;
+  padding:15px 6%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  box-shadow:0 3px 15px #0003;
+}
 
-    .logo {
-      font-size: 25px;
-      font-weight: bold;
-    }
+.logo{
+  font-size:25px;
+  font-weight:bold;
+}
 
-    .logo span {
-      color: #ffe600;
-    }
+.logo span{
+  color:#ffe600;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
-      font-weight: bold;
-    }
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:16px;
+  font-weight:bold;
+}
 
-    nav a:hover {
-      color: #ffe600;
-    }
+nav a:hover{
+  color:#ffe600;
+}
 
-    .hero {
-      min-height: 500px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 60px 20px;
-      color: white;
-      background:
-        linear-gradient(rgba(0, 45, 120, .80), rgba(0, 100, 190, .80)),
-        linear-gradient(135deg, #0757d5, #00b4ff);
-    }
+.hero{
+  background:linear-gradient(135deg,#003b91,#008fd5);
+  color:white;
+  text-align:center;
+  padding:70px 20px;
+}
 
-    .hero h1 {
-      font-size: 50px;
-      margin-bottom: 15px;
-    }
+.hero h1{
+  font-size:45px;
+}
 
-    .hero h1 span {
-      color: #ffe600;
-    }
+.hero h1 span{
+  color:#ffe600;
+}
 
-    .hero p {
-      font-size: 21px;
-      max-width: 700px;
-      margin: auto;
-    }
+.hero p{
+  font-size:19px;
+  margin:10px auto;
+  max-width:750px;
+}
 
-    .buttons {
-      margin-top: 30px;
-    }
+.search{
+  margin:25px auto 0;
+  max-width:600px;
+}
 
-    .btn {
-      display: inline-block;
-      padding: 13px 25px;
-      margin: 7px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: .3s;
-    }
+.search input{
+  width:100%;
+  padding:15px;
+  border:0;
+  border-radius:30px;
+  font-size:16px;
+  outline:none;
+}
 
-    .btn-call {
-      background: #ffe600;
-      color: #111;
-    }
+section{
+  padding:55px 6%;
+}
 
-    .btn-whatsapp {
-      background: #25d366;
-      color: white;
-    }
+.title{
+  text-align:center;
+  color:#0757d5;
+  font-size:30px;
+  margin-bottom:30px;
+}
 
-    .btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 7px 15px rgba(0,0,0,.2);
-    }
+/* CATEGORY */
 
-    section {
-      padding: 65px 6%;
-    }
+.categories{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:15px;
+}
 
-    .section-title {
-      text-align: center;
-      font-size: 32px;
-      color: #0757d5;
-      margin-bottom: 35px;
-    }
+.category{
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  text-align:center;
+  box-shadow:0 4px 15px #0001;
+  font-weight:bold;
+}
 
-    .services {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-    }
+.category div{
+  font-size:35px;
+}
 
-    .card {
-      background: white;
-      padding: 30px 20px;
-      text-align: center;
-      border-radius: 15px;
-      box-shadow: 0 5px 20px rgba(0,0,0,.08);
-      transition: .3s;
-    }
+/* JOBS */
 
-    .card:hover {
-      transform: translateY(-7px);
-      box-shadow: 0 10px 25px rgba(0,0,0,.15);
-    }
+.jobs{
+  max-width:1000px;
+  margin:auto;
+}
 
-    .icon {
-      font-size: 48px;
-      margin-bottom: 15px;
-    }
+.job{
+  background:white;
+  border-radius:15px;
+  padding:25px;
+  margin-bottom:20px;
+  box-shadow:0 5px 18px #0001;
+  border-left:5px solid #0757d5;
+}
 
-    .card h3 {
-      color: #0757d5;
-      margin-bottom: 10px;
-    }
+.job h3{
+  color:#0757d5;
+  font-size:22px;
+  margin-bottom:8px;
+}
 
-    .about {
-      background: white;
-      text-align: center;
-    }
+.badge{
+  display:inline-block;
+  background:#e8f1ff;
+  color:#0757d5;
+  padding:5px 10px;
+  border-radius:20px;
+  margin:4px;
+  font-size:13px;
+}
 
-    .about p {
-      max-width: 800px;
-      margin: auto;
-      font-size: 18px;
-    }
+.job table{
+  width:100%;
+  margin-top:15px;
+  border-collapse:collapse;
+}
 
-    .contact {
-      background: #eef5ff;
-    }
+.job td{
+  padding:9px;
+  border-bottom:1px solid #eee;
+}
 
-    .contact-box {
-      max-width: 750px;
-      margin: auto;
-      background: white;
-      padding: 35px;
-      border-radius: 18px;
-      box-shadow: 0 5px 20px rgba(0,0,0,.08);
-      text-align: center;
-    }
+.job td:first-child{
+  font-weight:bold;
+  width:35%;
+}
 
-    .contact-box p {
-      margin: 13px 0;
-      font-size: 18px;
-    }
+.btn{
+  display:inline-block;
+  padding:11px 20px;
+  border-radius:25px;
+  text-decoration:none;
+  font-weight:bold;
+  margin-top:15px;
+  margin-right:7px;
+}
 
-    .contact-box a {
-      color: #0757d5;
-      font-weight: bold;
-      text-decoration: none;
-    }
+.apply{
+  background:#0757d5;
+  color:white;
+}
 
-    footer {
-      background: #08285e;
-      color: white;
-      text-align: center;
-      padding: 25px 15px;
-    }
+.whatsapp{
+  background:#25d366;
+  color:white;
+}
 
-    .whatsapp-float {
-      position: fixed;
-      right: 20px;
-      bottom: 20px;
-      background: #25d366;
-      color: white;
-      width: 58px;
-      height: 58px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 30px;
-      text-decoration: none;
-      box-shadow: 0 5px 15px rgba(0,0,0,.3);
-      z-index: 999;
-    }
+.btn:hover{
+  opacity:.88;
+}
 
-    @media (max-width: 900px) {
-      .services {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
+/* SERVICES */
 
-    @media (max-width: 600px) {
-      header {
-        flex-direction: column;
-        gap: 10px;
-      }
+.services{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
 
-      nav a {
-        margin: 0 7px;
-        font-size: 14px;
-      }
+.service{
+  background:white;
+  text-align:center;
+  padding:25px;
+  border-radius:15px;
+  box-shadow:0 5px 18px #0001;
+}
 
-      .hero h1 {
-        font-size: 38px;
-      }
+.service .icon{
+  font-size:45px;
+}
 
-      .hero p {
-        font-size: 17px;
-      }
+.service h3{
+  color:#0757d5;
+  margin:8px 0;
+}
 
-      .services {
-        grid-template-columns: 1fr;
-      }
+/* CONTACT */
 
-      section {
-        padding: 45px 5%;
-      }
+.contact{
+  background:#eaf3ff;
+}
 
-      .section-title {
-        font-size: 27px;
-      }
-    }
-  </style>
+.contact-box{
+  max-width:800px;
+  margin:auto;
+  background:white;
+  padding:30px;
+  border-radius:15px;
+  text-align:center;
+  box-shadow:0 5px 18px #0001;
+}
+
+.contact-box p{
+  margin:8px;
+  font-size:17px;
+}
+
+footer{
+  background:#08285e;
+  color:white;
+  text-align:center;
+  padding:25px;
+}
+
+.whatsapp-float{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  background:#25d366;
+  color:white;
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:28px;
+  text-decoration:none;
+  box-shadow:0 5px 15px #0004;
+  z-index:999;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+  .categories{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .services{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:600px){
+
+  header{
+    flex-direction:column;
+    gap:10px;
+  }
+
+  nav a{
+    margin:0 5px;
+    font-size:13px;
+  }
+
+  .hero h1{
+    font-size:34px;
+  }
+
+  .categories,
+  .services{
+    grid-template-columns:1fr;
+  }
+
+  section{
+    padding:40px 5%;
+  }
+
+  .job{
+    padding:18px;
+  }
+
+  .job table td{
+    display:block;
+    width:100% !important;
+  }
+}
+</style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <div class="logo">Aman <span>Computer</span> 💻</div>
-
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-
-  <!-- HOME -->
-  <section class="hero" id="home">
-    <div>
-      <h1>Welcome to <span>Aman Computer</span></h1>
-
-      <p>
-        Computer Repairing, Printer Repairing,
-        Online Forms एवं Government Services
-      </p>
-
-      <div class="buttons">
-        <a class="btn btn-call" href="tel:9098416285">
-          📞 Call Now
-        </a>
-
-        <a class="btn btn-whatsapp"
-           href="https://wa.me/919098416285"
-           target="_blank">
-          💬 WhatsApp
-        </a>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- SERVICES -->
-  <section id="services">
+<!-- HEADER -->
 
-    <h2 class="section-title">हमारी सेवाएँ | Our Services</h2>
+<header>
 
-    <div class="services">
+<div class="logo">
+Aman <span>Computer Jobs</span> 💻
+</div>
 
-      <div class="card">
-        <div class="icon">💻</div>
-        <h3>Computer Repairing</h3>
-        <p>
-          Desktop और computer की repairing,
-          software एवं सामान्य troubleshooting.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="icon">🖨️</div>
-        <h3>Printer Repairing</h3>
-        <p>
-          Printer की servicing, troubleshooting
-          और repairing की सुविधा.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="icon">📝</div>
-        <h3>Online Forms</h3>
-        <p>
-          विभिन्न online forms भरने और
-          online application में सहायता.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="icon">🏛️</div>
-        <h3>Government Services</h3>
-        <p>
-          CSC जैसी विभिन्न digital एवं
-          government-related services.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ABOUT -->
-  <section class="about" id="about">
-
-    <h2 class="section-title">Aman Computer के बारे में</h2>
-
-    <p>
-      Aman Computer, Maro, Bemetara में computer और
-      printer repairing के साथ online forms तथा
-      विभिन्न government/digital services उपलब्ध कराने
-      का प्रयास करता है।
-    </p>
-
-  </section>
-
-
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
-
-    <h2 class="section-title">हमसे संपर्क करें</h2>
-
-    <div class="contact-box">
-
-      <p>📍 <strong>पता:</strong></p>
-
-      <p>
-        जिला सहकारी बैंक के पास,<br>
-        ममता मार्केट, मारो,<br>
-        जिला बेमेतरा, छत्तीसगढ़ - 491340
-      </p>
-
-      <p>
-        📞 Mobile:
-        <a href="tel:9098416285">9098416285</a>
-      </p>
-
-      <div class="buttons">
-
-        <a class="btn btn-call" href="tel:9098416285">
-          📞 Call करें
-        </a>
-
-        <a class="btn btn-whatsapp"
-           href="https://wa.me/919098416285"
-           target="_blank">
-          💬 WhatsApp करें
-        </a>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- FOOTER -->
-  <footer>
-
-    <p>
-      © <span id="year"></span> Aman Computer.
-      All Rights Reserved.
-    </p>
-
-    <p>
-      Maro, Bemetara, Chhattisgarh
-    </p><!DOCTYPE html>
-<html lang="hi">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Aman Computer | Maro, Bemetara</title>
-
-  <meta name="description"
-    content="Aman Computer, Maro Bemetara - Computer Repairing, Printer Repairing, Online Forms और Government Services.">
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      background: #f5f7fb;
-      color: #222;
-      line-height: 1.6;
-    }
-
-    /* HEADER */
-    header {
-      background: linear-gradient(135deg, #0757d5, #00a8ff);
-      color: white;
-      padding: 16px 6%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 3px 12px rgba(0,0,0,.2);
-    }
-
-    .logo {
-      font-size: 25px;
-      font-weight: bold;
-    }
-
-    .logo span {
-      color: #ffe600;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 18px;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      color: #ffe600;
-    }
-
-    /* HERO */
-    .hero {
-      min-height: 530px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 70px 20px;
-      color: white;
-      background:
-        linear-gradient(rgba(0,40,110,.84), rgba(0,110,190,.84)),
-        linear-gradient(135deg, #0757d5, #00b4ff);
-    }
-
-    .hero h1 {
-      font-size: 50px;
-      margin-bottom: 15px;
-    }
-
-    .hero h1 span {
-      color: #ffe600;
-    }
-
-    .hero p {
-      font-size: 20px;
-      max-width: 750px;
-      margin: auto;
-    }
-
-    .buttons {
-      margin-top: 28px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 13px 24px;
-      margin: 6px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: .3s;
-    }
-
-    .btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 7px 16px rgba(0,0,0,.2);
-    }
-
-    .btn-call {
-      background: #ffe600;
-      color: #111;
-    }
-
-    .btn-whatsapp {
-      background: #25d366;
-      color: white;
-    }
-
-    .btn-blue {
-      background: #0757d5;
-      color: white;
-    }
-
-    /* COMMON SECTION */
-    section {
-      padding: 65px 6%;
-    }
-
-    .section-title {
-      text-align: center;
-      font-size: 32px;
-      color: #0757d5;
-      margin-bottom: 38px;
-    }
-
-    /* SERVICES */
-    .services {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-    }
-
-    .card {
-      background: white;
-      padding: 28px 20px;
-      text-align: center;
-      border-radius: 16px;
-      box-shadow: 0 5px 20px rgba(0,0,0,.08);
-      transition: .3s;
-    }
-
-    .card:hover {
-      transform: translateY(-7px);
-      box-shadow: 0 10px 25px rgba(0,0,0,.15);
-    }
-
-    .icon {
-      font-size: 48px;
-      margin-bottom: 12px;
-    }
-
-    .card h3 {
-      color: #0757d5;
-      margin-bottom: 10px;
-    }
-
-    .price {
-      color: #555;
-      font-weight: bold;
-      margin-top: 12px;
-    }
-
-    /* ABOUT */
-    .about {
-      background: white;
-      text-align: center;
-    }
-
-    .about p {
-      max-width: 850px;
-      margin: auto;
-      font-size: 18px;
-    }
-
-    /* PRICING */
-    .pricing {
-      background: #eef5ff;
-    }
-
-    .price-box {
-      max-width: 900px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-    }
-
-    .price-item {
-      background: white;
-      padding: 22px;
-      border-radius: 14px;
-      box-shadow: 0 4px 15px rgba(0,0,0,.08);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 15px;
-    }
-
-    .price-item h3 {
-      color: #0757d5;
-    }
-
-    /* GALLERY */
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .gallery-box {
-      height: 220px;
-      border-radius: 15px;
-      background: linear-gradient(135deg, #0757d5, #00b4ff);
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      font-size: 22px;
-      font-weight: bold;
-      padding: 20px;
-      box-shadow: 0 5px 18px rgba(0,0,0,.12);
-    }
-
-    /* CONTACT */
-    .contact {
-      background: #eef5ff;
-    }
-
-    .contact-box {
-      max-width: 800px;
-      margin: auto;
-      background: white;
-      padding: 35px;
-      border-radius: 18px;
-      text-align: center;
-      box-shadow: 0 5px 20px rgba(0,0,0,.08);
-    }
-
-    .contact-box p {
-      margin: 12px 0;
-      font-size: 18px;
-    }
-
-    .contact-box a {
-      color: #0757d5;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    /* MAP */
-    .map {
-      width: 100%;
-      max-width: 1000px;
-      height: 400px;
-      margin: 35px auto 0;
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: 0 5px 20px rgba(0,0,0,.12);
-    }
-
-    .map iframe {
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-
-    /* FOOTER */
-    footer {
-      background: #08285e;
-      color: white;
-      text-align: center;
-      padding: 25px 15px;
-    }
-
-    /* FLOATING WHATSAPP */
-    .whatsapp-float {
-      position: fixed;
-      right: 20px;
-      bottom: 20px;
-      width: 58px;
-      height: 58px;
-      border-radius: 50%;
-      background: #25d366;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 29px;
-      text-decoration: none;
-      box-shadow: 0 5px 15px rgba(0,0,0,.3);
-      z-index: 999;
-    }
-
-    /* MOBILE */
-    @media (max-width: 900px) {
-      .services {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .gallery {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (max-width: 600px) {
-
-      header {
-        flex-direction: column;
-        gap: 10px;
-      }
-
-      nav a {
-        margin: 0 6px;
-        font-size: 13px;
-      }
-
-      .hero {
-        min-height: 480px;
-      }
-
-      .hero h1 {
-        font-size: 36px;
-      }
-
-      .hero p {
-        font-size: 17px;
-      }
-
-      .services,
-      .price-box,
-      .gallery {
-        grid-template-columns: 1fr;
-      }
-
-      .section-title {
-        font-size: 27px;
-      }
-
-      .price-item {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .map {
-        height: 330px;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-  <!-- HEADER -->
-  <header>
-
-    <div class="logo">
-      Aman <span>Computer</span> 💻
-    </div>
-
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#pricing">Price</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#contact">Contact</a>
-    </nav>
-
-  </header>
-
-
-  <!-- HOME -->
-  <section class="hero" id="home">
-
-    <div>
-
-      <h1>
-        Welcome to <span>Aman Computer</span>
-      </h1>
-
-      <p>
-        Computer Repairing • Printer Repairing •
-        Online Forms • Government Services
-      </p>
-
-      <div class="buttons">
-
-        <a class="btn btn-call" href="tel:9098416285">
-          📞 Call Now
-        </a>
-
-        <a class="btn btn-whatsapp"
-           href="https://wa.me/919098416285?text=Namaste%20Aman%20Computer%2C%20mujhe%20aapki%20service%20ke%20baare%20mein%20jaankari%20chahiye."
-           target="_blank">
-          💬 WhatsApp
-        </a>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- SERVICES -->
-  <section id="services">
-
-    <h2 class="section-title">
-      हमारी सेवाएँ | Our Services
-    </h2>
-
-    <div class="services">
-
-      <div class="card">
-        <div class="icon">💻</div>
-        <h3>Computer Repairing</h3>
-
-        <p>
-          Desktop और computer की repairing,
-          software एवं troubleshooting.
-        </p>
-
-        <div class="price">
-          Price के लिए WhatsApp करें
-        </div>
-
-        <a class="btn btn-whatsapp"
-           href="https://wa.me/919098416285?text=Computer%20Repairing%20ke%20baare%20mein%20jaankari%20chahiye."
-           target="_blank">
-          WhatsApp करें
-        </a>
-      </div>
-
-
-      <div class="card">
-        <div class="icon">🖨️</div>
-        <h3>Printer Repairing</h3>
-
-        <p>
-          Printer servicing, troubleshooting
-          एवं repairing.
-        </p>
-
-        <div class="price">
-          Price के लिए WhatsApp करें
-        </div>
-
-        <a class="btn btn-whatsapp"
-           href="https://wa.me/919098416285?text=Printer%20Repairing%20ke%20baare%20mein%20jaankari%20chahiye."
-           target="_blank">
-          WhatsApp करें
-        </a>
-      </div>
-
-
-      <div class="card">
-        <div class="icon">📝</div>
-        <h3>Online Forms</h3>
-
-        <p>
-          विभिन्न online forms एवं
-          online applications.
-        </p>
-
-        <div class="price">
-          Price के लिए WhatsApp करें
-        </div>
-
-        <a class="btn btn-whatsapp"
-           href="https://wa.me/919098416285?text=Online%20Form%20ke%20baare%20mein%20jaankari%20chahiye."
-           target="_blank">
-          WhatsApp करें
-        </a>
-      </div>
-
-
-      <div class="card">
-        <div class="icon">🏛️</div>
-        <h3>Government Services</h3>
-
-        <p>
-          CSC जैसी विभिन्न digital एवं
-          government-related services.
-        </p>
-
-        <div class="price">
-          Price के लिए WhatsApp करें
-        </div>
-
-        <a class="btn btn-whatsapp"
-           href="https://wa.me/919098416285?text=Government%20Services%20ke%20baare%20mein%20jaankari%20chahiye."
-           target="_blank">
-          WhatsApp करें
-        </a>
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- ABOUT -->
-  <section class="about" id="about">
-
-    <h2 class="section-title">
-      Aman Computer के बारे में
-    </h2>
-
-    <p>
-      Aman Computer, Maro, Bemetara में computer और
-      printer repairing के साथ online forms तथा
-      विभिन्न digital एवं government-related services
-      के लिए आपकी सहायता करता है।
-    </p>
-
-  </section>
-
-
-  <!-- PRICING -->
-  <section class="pricing" id="pricing">
-
-    <h2 class="section-title">
-      Services & Price
-    </h2>
-
-    <div class="price-box">
-
-      <div class="price-item">
-        <div>
-          <h3>💻 Computer Repairing</h3>
-          <p>Computer की समस्या के अनुसार</p>
-        </div>
-
-        <a class="btn btn-blue"
-           href="https://wa.me/919098416285?text=Computer%20Repairing%20ka%20price%20bataye."
-           target="_blank">
-          Price पूछें
-        </a>
-      </div>
-
-
-      <div class="price-item">
-        <div>
-          <h3>🖨️ Printer Repairing</h3>
-          <p>Printer की समस्या के अनुसार</p>
-        </div>
-
-        <a class="btn btn-blue"
-           href="https://wa.me/919098416285?text=Printer%20Repairing%20ka%20price%20bataye."
-           target="_blank">
-          Price पूछें
-        </a>
-      </div>
-
-
-      <div class="price-item">
-        <div>
-          <h3>📝 Online Forms</h3>
-          <p>Form के अनुसार service charge</p>
-        </div>
-
-        <a class="btn btn-blue"
-           href="https://wa.me/919098416285?text=Online%20Form%20ka%20price%20bataye."
-           target="_blank">
-          Price पूछें
-        </a>
-      </div>
-
-
-      <div class="price-item">
-        <div>
-          <h3>🏛️ Government Services</h3>
-          <p>Service के अनुसार charge</p>
-        </div>
-
-        <a class="btn btn-blue"
-           href="https://wa.me/919098416285?text=Government%20Service%20ka%20price%20bataye."
-           target="_blank">
-          Price पूछें
-        </a>
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- GALLERY -->
-  <section id="gallery">
-
-    <h2 class="section-title">
-      Photo Gallery
-    </h2>
-
-    <div class="gallery">
-
-      <!-- अपनी दुकान की फोटो यहां लगा सकते हैं -->
-      <div class="gallery-box">
-        🏪<br>
-        Aman Computer
-      </div>
-
-      <div class="gallery-box">
-        💻<br>
-        Computer Repairing
-      </div>
-
-      <div class="gallery-box">
-        🖨️<br>
-        Printer Repairing
-      </div>
-
-      <div class="gallery-box">
-        📝<br>
-        Online Services
-      </div>
-
-      <div class="gallery-box">
-        🏛️<br>
-        Digital Services
-      </div>
-
-      <div class="gallery-box">
-        🙏<br>
-        आपका स्वागत है
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
-
-    <h2 class="section-title">
-      Contact Us
-    </h2>
-
-    <div class="contact-box">
-
-      <p>📍 <strong>Shop Address</strong></p>
-
-      <p>
-        जिला सहकारी बैंक के पास,<br>
-        ममता मार्केट, मारो,<br>
-        जिला बेमेतरा, छत्तीसगढ़ - 491340
-      </p>
-
-      <p>
-        📞 Mobile:
-        <a href="tel:9098416285">
-          9098416285
-        </a>
-      </p>
-
-      <div class="buttons">
-
-        <a class="btn btn-call"
-           href="tel:9098416285">
-          📞 Call करें
-        </a>
-
-        <a class="btn btn-whatsapp"
-           href="https://wa.me/919098416285"
-           target="_blank">
-          💬 WhatsApp करें
-        </a>
-
-      </div>
-
-    </div>
-
-
-    <!-- GOOGLE MAP -->
-    <div class="map">
-
-      <iframe
-        src="https://www.google.com/maps?q=Maro%2C%20Bemetara%2C%20Chhattisgarh%20491340&output=embed"
-        loading="lazy"
-        allowfullscreen>
-      </iframe>
-
-    </div>
-
-  </section>
-
-
-  <!-- FOOTER -->
-  <footer>
-
-    <p>
-      © <span id="year"></span> Aman Computer
-    </p>
-
-    <p>
-      Maro, Bemetara, Chhattisgarh - 491340
-    </p>
-
-    <p>
-      Computer • Printer • Online Services
-    </p>
-
-  </footer>
-
-
-  <!-- FLOATING WHATSAPP -->
-  <a
-    class="whatsapp-float"
-    href="https://wa.me/919098416285"
-    target="_blank"
-    aria-label="WhatsApp">
-    💬
-  </a>
-
-
-  <script>
-    document.getElementById("year").textContent =
-      new Date().getFullYear();
-  </script>
-
-</body>
-</html>
-
-  </footer>
-
-
-  <!-- FLOATING WHATSAPP -->
-  <a class="whatsapp-float"
-     href="https://wa.me/919098416285"
-     target="_blank"
-     aria-label="WhatsApp">
-    💬
-  </a>
-
-
-  <script>
-    document.getElementById("year").textContent =
-      new Date().getFullYear();
-  </script>
+<nav>
+<a href="#home">Home</a>
+<a href="#jobs">Latest Jobs</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<h1>
+Aman <span>Computer Jobs</span>
+</h1>
+
+<p>
+Latest Government Jobs • Private Jobs • Online Forms •
+Admit Card • Results
+</p>
+
+<div class="search">
+<input
+type="text"
+id="searchBox"
+placeholder="🔎 Search Job..."
+onkeyup="searchJobs()">
+</div>
+
+</section>
+
+
+<!-- CATEGORIES -->
+
+<section>
+
+<h2 class="title">
+Job Categories
+</h2>
+
+<div class="categories">
+
+<div class="category">
+<div>🏛️</div>
+Government Jobs
+</div>
+
+<div class="category">
+<div>🏢</div>
+Private Jobs
+</div>
+
+<div class="category">
+<div>📝</div>
+Online Forms
+</div>
+
+<div class="category">
+<div>🎫</div>
+Admit Card
+</div>
+
+<div class="category">
+<div>📊</div>
+Results
+</div>
+
+</div>
+
+</section>
+
+
+<!-- JOBS -->
+
+<section id="jobs">
+
+<h2 class="title">
+📢 Latest Jobs
+</h2>
+
+<div class="jobs">
+
+
+<!-- NABFINS JOB -->
+
+<div class="job">
+
+<h3>
+NABFINS CSO Recruitment 2026
+</h3>
+
+<span class="badge">
+Private Job
+</span>
+
+<span class="badge">
+10+2 / PUC
+</span>
+
+<span class="badge">
+Chhattisgarh
+</span>
+
+<table>
+
+<tr>
+<td>Organization</td>
+<td>NABFINS Limited</td>
+</tr>
+
+<tr>
+<td>Post</td>
+<td>Customer Service Officer (CSO), Telecaller</td>
+</tr>
+
+<tr>
+<td>Qualification</td>
+<td>PUC / 10+2 Completed</td>
+</tr>
+
+<tr>
+<td>Experience</td>
+<td>Freshers Eligible; relevant experience may be preferred</td>
+</tr>
+
+<tr>
+<td>CSO Requirement</td>
+<td>Valid Driving Licence + Motorcycle</td>
+</tr>
+
+<tr>
+<td>Telecaller</td>
+<td>Work From Home</td>
+</tr>
+
+<tr>
+<td>Telecaller Age</td>
+<td>Maximum 30 Years</td>
+</tr>
+
+<tr>
+<td>Job Location</td>
+<td>Bihar, Odisha, Chhattisgarh, Rajasthan</td>
+</tr>
+
+<tr>
+<td>Application Mode</td>
+<td>Resume through Email</td>
+</tr>
+
+<tr>
+<td>Last Date</td>
+<td><strong style="color:red">
+26 August 2026
+</strong></td>
+</tr>
+
+</table>
+
+<a
+class="btn apply"
+href="https://nabfins.org/Career/"
+target="_blank">
+Official Website
+</a>
+
+<a
+class="btn whatsapp"
+href="https://wa.me/919098416285?text=NABFINS%20CSO%20Recruitment%202026%20ke%20liye%20jaankari%20chahiye."
+target="_blank">
+WhatsApp Help
+</a>
+
+<p style="margin-top:15px;font-size:14px;color:#666;">
+⚠️ आवेदन करने से पहले official NABFINS website पर
+eligibility और recruitment details जरूर verify करें।
+</p>
+
+</div>
+
+
+<!-- MORE JOBS -->
+
+<div class="job">
+
+<h3>
+नई Vacancy जल्द ही यहाँ दिखाई जाएगी
+</h3>
+
+<p>
+Aman Computer Jobs पर नई Government और Private
+vacancies की जानकारी यहाँ जोड़ी जाएगी।
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section id="services">
+
+<h2 class="title">
+💻 Aman Computer Services
+</h2>
+
+<div class="services">
+
+<div class="service">
+
+<div class="icon">💻</div>
+
+<h3>
+Computer Repairing
+</h3>
+
+<p>
+Desktop एवं computer repairing
+और troubleshooting.
+</p>
+
+<a
+class="btn whatsapp"
+href="https://wa.me/919098416285?text=Computer%20Repairing%20ke%20baare%20mein%20jaankari%20chahiye."
+target="_blank">
+WhatsApp
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="icon">🖨️</div>
+
+<h3>
+Printer Repairing
+</h3>
+
+<p>
+Printer servicing और repairing.
+</p>
+
+<a
+class="btn whatsapp"
+href="https://wa.me/919098416285?text=Printer%20Repairing%20ke%20baare%20mein%20jaankari%20chahiye."
+target="_blank">
+WhatsApp
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="icon">📝</div>
+
+<h3>
+Online Forms
+</h3>
+
+<p>
+Online forms और applications
+भरने की सुविधा.
+</p>
+
+<a
+class="btn whatsapp"
+href="https://wa.me/919098416285?text=Online%20Form%20ke%20baare%20mein%20jaankari%20chahiye."
+target="_blank">
+WhatsApp
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="icon">🏛️</div>
+
+<h3>
+Government Services
+</h3>
+
+<p>
+Various digital और government
+related services.
+</p>
+
+<a
+class="btn whatsapp"
+href="https://wa.me/919098416285?text=Government%20Services%20ke%20baare%20mein%20jaankari%20chahiye."
+target="_blank">
+WhatsApp
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<h2 class="title">
+📞 Contact Aman Computer
+</h2>
+
+<div class="contact-box">
+
+<p>
+📍 <strong>Address</strong>
+</p>
+
+<p>
+जिला सहकारी बैंक के पास,<br>
+ममता मार्केट, मारो,<br>
+जिला बेमेतरा, छत्तीसगढ़ - 491340
+</p>
+
+<p>
+📞 <strong>Mobile:</strong>
+<a href="tel:9098416285">
+9098416285
+</a>
+</p>
+
+<a
+class="btn whatsapp"
+href="https://wa.me/919098416285"
+target="_blank">
+💬 WhatsApp करें
+</a>
+
+<a
+class="btn apply"
+href="tel:9098416285">
+📞 Call करें
+</a>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+© <span id="year"></span>
+Aman Computer Jobs
+</p>
+
+<p>
+Maro, Bemetara, Chhattisgarh
+</p>
+
+<p>
+Jobs • Forms • Computer Services
+</p>
+
+</footer>
+
+
+<!-- FLOATING WHATSAPP -->
+
+<a
+class="whatsapp-float"
+href="https://wa.me/919098416285"
+target="_blank">
+💬
+</a>
+
+
+<script>
+
+document.getElementById("year").textContent =
+new Date().getFullYear();
+
+
+function searchJobs(){
+
+let input =
+document.getElementById("searchBox")
+.value
+.toLowerCase();
+
+let jobs =
+document.querySelectorAll(".job");
+
+jobs.forEach(function(job){
+
+let text =
+job.innerText.toLowerCase();
+
+if(text.includes(input)){
+job.style.display="block";
+}else{
+job.style.display="none";
+}
+
+});
+
+}
+
+</script>
 
 </body>
 </html>
